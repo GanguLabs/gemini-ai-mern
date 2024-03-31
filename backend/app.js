@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
@@ -8,7 +9,7 @@ const app = express();
 const corsOptions = {
     origin: ['http://localhost:5173', 'http://localhost:5174']
 }
-const PORT = 8080;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors(corsOptions))
 app.use(express.json());
