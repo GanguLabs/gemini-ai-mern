@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch backend/app.js",
     "start": "node backend/app.js",
     "client": "npm run dev --prefix frontend",
