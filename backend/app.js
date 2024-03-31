@@ -7,7 +7,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
 const corsOptions = {
-    origin: ['http://localhost:5173', 'http://localhost:5174']
+    origin: ['https://gemini-ai-mern-2.azurewebsites.net', 'http://localhost:5173', 'http://localhost:5174']
 }
 const PORT = process.env.PORT || 5000;
 
